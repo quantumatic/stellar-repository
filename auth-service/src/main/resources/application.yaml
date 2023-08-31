@@ -1,0 +1,23 @@
+spring:
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    username:
+    password:
+    url:
+    driver-class-name: org.postgresql.Driver
+logging:
+  level:
+    root: info
+application:
+  security:
+    jwt:
+      secret-key:
+      expiration:
+      refresh-token:
+        expiration:
